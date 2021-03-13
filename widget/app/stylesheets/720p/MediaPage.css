@@ -1,0 +1,54 @@
+#OverlayMediaPage {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 452px;
+    height: 0px;
+    text-align: center;
+    color: #ffffff;
+    visibility: hidden;
+
+    overflow: hidden;    
+    border-radius: 5px;    
+	  box-shadow: 0 0 2px 2px rgba(50, 50, 50, 0.7);
+	  background: rgba(33, 37, 41, 0.7);
+    z-index: 5500;
+}
+
+#mediapageinfo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  text-align: center;
+  width: 432px;
+  /*height: 230px;*/
+  word-wrap: break-word;
+}
+
+#mediapageinfo dl {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 10px;  
+}
+
+#mediapageinfo dt {
+  padding: 0;
+  margin: 0;
+  /*font-weight: bold;*/
+}
+
+#mediapageinfo dd {
+  padding: 0;
+  margin: 0;
+  background-color: inherit;
+}
+
+#mediapageinfo span {
+  display: block;
+  height: 10px;
+}
