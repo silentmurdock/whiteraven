@@ -1,0 +1,68 @@
+#OverlayAboutPage {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 540px;
+    height: 0px;
+    text-align: center;
+    color: #383838;
+    visibility: hidden;
+
+    /*overflow: hidden;*/
+    box-shadow: 0px 0px 2px 2px #71716b;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 500;
+}
+
+#abouttitle {
+  margin-top: 46px;
+  font-size: 40px;
+  word-spacing: 118px;
+}
+
+#aboutlogo {
+  position: absolute;
+  top: 22px;
+  left: 210px;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  width: 112px;
+}
+
+#aboutinfo {
+  position: absolute;
+  top: 130px;
+  left: 10px;
+  text-align: center;
+  width: 520px;
+}
+
+#aboutinfo dl {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 10px;  
+}
+
+#aboutinfo dt {
+  padding: 0;
+  margin: 0;
+  /*font-weight: bold;*/
+  background-color: #d0d0d0;
+}
+
+#aboutinfo dd {
+  padding: 0;
+  margin: 0;
+  background-color: inherit;
+}
+
+#aboutinfo span {
+  display: block;
+  height: 10px;
+}

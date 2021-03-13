@@ -1,0 +1,107 @@
+#!/bin/sh
+#
+# White Raven Server Init Script
+# Created by SilentMurdock
+# Websites: https://github.com/silentmurdock
+#
+. /dtv/SGO.env
+
+WIDGETDIR="/mtd_rwcommon/widgets/user"
+WIDGETNAME="WhiteRaven"
+SERVERDIR="$WIDGETDIR/$WIDGETNAME/server"
+FULLSERVERPATH="$WIDGETDIR/$WIDGETNAME/server/wrserver"
+SERVERNAME="wrserver"
+TAA="$WIDGETDIR/$WIDGETNAME/server/wrserver.taa"
+
+DOWNSPEED="$2"
+UPSPEED="$3"
+
+check_processor()
+{
+	echo "Checking Processor Type..."
+	CPUTYPE=$(uname -m | awk '{print substr($0,0,3)}')
+	if [ "$CPUTYPE" == "arm" ]; then
+		echo "ARM Processor Found!"
+	else
+		echo "No ARM Processor Found! Init halted..."
+		exit 1
+	fi
+}
+
+start_wrserver()
+{
+	SERVERSTATUS=$(ps -ef | grep wrserver | grep -v grep)
+	if [ "$SERVERSTATUS" == "" ]; then
+		echo "Trying To Start White Raven Server..."
+		cd "$SERVERDIR"
+		set_swappiness
+		nice -n +19 ./"$SERVERNAME" -storagetype="memory" -downrate="$DOWNSPEED" -uprate="$UPSPEED" -background
+		echo "White Raven Server Is Started!"
+	else
+		echo "White Raven Server Is Already Running!"
+	fi
+}
+
+start_or_decompress_wrserver()
+{
+	if [ -e "$FULLSERVERPATH" ]; then
+		start_wrserver
+	else
+		if [ -e "$TAA" ]; then
+			echo "Trying To Decompress White Raven Server..."
+			cd "$SERVERDIR"
+			cat wrserver.t* | tar -xvzf -
+			if [ -e "$FULLSERVERPATH" ]; then
+				echo "White Raven Server Is Decompressed!"
+				start_wrserver
+			else
+				echo "White Raven Server Decompression Failed!"
+			fi
+		else
+			echo "One Or More Compressed White Raven Server Files Not Found!"
+		fi
+	fi
+}
+
+stop_wrserver()
+{
+	echo "Trying To Stop White Raven Server..."
+	ps -ef | grep wrserver | grep -v grep | awk '{print $2}' | xargs kill -2
+	echo "White Raven Server Is Stopped!"
+}
+
+check_status()
+{
+	SERVERSTATUS=$(ps -ef | grep wrserver | grep -v grep)
+	if [ "$SERVERSTATUS" != "" ]; then
+		echo "White Raven Server Is Running!"
+	else
+		echo "White Raven Server Is Stopped!"
+	fi
+}
+
+set_swappiness()
+{
+	SWAPPINESS=$(sysctl -n vm.swappiness)
+	if [ $SWAPPINESS -gt 30 ]; then
+		echo "Set Swappiness Value To 30!"
+		sysctl -w vm.swappiness=30
+	fi
+}
+
+case $1 in 
+	start)
+	check_processor
+	start_or_decompress_wrserver
+	;;
+	stop)
+	stop_wrserver
+	;;
+	status)
+	check_status
+	;;
+	*)
+	echo "Usage: $0 {start|stop|status} downspeed upspeed" 1>&2
+	exit 0
+	;;
+esac

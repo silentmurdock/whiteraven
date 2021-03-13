@@ -1,0 +1,133 @@
+#OverlaySubtitleStyle {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    position: absolute;
+    margin: auto;
+    top: 10px;
+    left: 0px;
+    right: 0px;
+    width: 752px;
+    height: 0px;
+    text-align: center;
+    color: #ffffff;
+    visibility: hidden;
+
+    overflow: hidden;    
+    border-radius: 5px;    
+    box-shadow: 0px 0px 2px 2px rgba(50, 50, 50, 0.7);
+    background: rgba(33, 37, 41, 0.7);
+    z-index: 5500;
+}
+
+#subtitlestyle {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  text-align: center;
+  width: 732px;
+  /*height: 230px;*/
+  word-wrap: break-word;
+  margin-top: 0px;
+  margin-bottom: 10px;  
+  height: 340px;
+}
+
+#titletext {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 732px;
+}
+
+#titlecontent {
+  position: absolute;
+  top: 32px;
+  left: 0px;
+  width: 732px;
+}
+
+#postext {
+  position: absolute;
+  top: 66px;
+  left: 0px;
+  width: 732px;
+}
+
+#poscontent {
+  position: absolute;
+  top: 98px;
+  left: 0px;
+  width: 732px;
+}
+
+#colortext {
+  position: absolute;
+  top: 132px;
+  left: 0px;
+  width: 732px;
+}
+
+#colorcontent {
+  position: absolute;
+  top: 164px;
+  left: 0px;
+  width: 732px;
+}
+
+#bgtext {
+  position: absolute;
+  top: 198px;
+  left: 0px;
+  width: 732px;
+}
+
+#bgcontent {
+  position: absolute;
+  top: 230px;
+  left: 0px;
+  width: 732px;
+}
+
+#bgotext {
+  position: absolute;
+  top: 264px;
+  left: 0px;
+  width: 732px;
+  text-shadow: #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px;
+}
+
+#bgocontent {
+  position: absolute;
+  top: 296px;
+  left: 0px;
+  width: 732px;
+  text-shadow: #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px;
+}
+
+.colorboxes {
+  display: inline-block;
+  position: static;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #383838;
+  /*box-shadow: 0px 0px 2px 2px #1d1f56;
+  border: 1px solid #ddd;*/
+  border-radius: 5px;
+  /*border-radius: 13px;*/
+  width: 18px;
+  padding: 1px 2px;
+  margin: 2px;
+  /*margin-left: 184px;*/
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.atbox {
+  color: #ffffff;
+  background-color: #383838;
+  box-shadow: 0px 0px 2px 2px #ffffff;
+}
+
+.acbox {
+  box-shadow: 0px 0px 2px 2px #ffffff;
+}

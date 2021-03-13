@@ -1,0 +1,28 @@
+{
+	"scenes" : [
+		"Main",
+		"MainMenu",
+		"HostsMenu",
+		"GenresMenu",
+		"SortMenu",
+		"AboutPage",
+		"InfoPage",
+		"SearchPage",
+		"SettingsPage",
+		"DataSelect",
+		"PlayerPage",
+		"ReceiverPage",
+		"MediaPage",
+		"AudioMenu",
+		"SubtitleMenu",
+		"LoadSubtitle",
+		"SubtitleSync",
+		"SubtitleStyle",
+		"SubtitleSearch",
+		"MultiVideo",
+		"ResumeMenu"
+	],
+	"files": ["app/stylesheets/global.css"],
+    "resolutions": ["720p"],
+	"theme" : "base"
+}

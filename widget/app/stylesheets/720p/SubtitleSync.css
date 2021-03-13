@@ -1,0 +1,55 @@
+#OverlaySubtitleSync{
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 342px;
+    height: 60px;
+    text-align: center;
+    color: #ffffff;
+    visibility: hidden;
+
+    overflow: hidden;    
+    border-radius: 5px;    
+	  box-shadow: 0 0 2px 2px rgba(50, 50, 50, 0.7);
+	  background: rgba(33, 37, 41, 0.7);
+    z-index: 5500;
+}
+
+#subtitleSyncHTML {
+  position: absolute;
+  top: 3px;
+  left: 10px;
+  text-align: center;
+  width: 322px;
+  /*height: 230px;*/
+  word-wrap: break-word;
+}
+
+#syncleft {
+  position: absolute;
+  top: 12px;
+  left: 56px;
+}
+
+#syncright {
+  position: absolute;
+  top: 12px;
+  left: 250px;
+}
+
+#syncdown {
+  position: absolute;
+  top: 12px;
+  left: 14px;
+}
+
+#syncup {
+  position: absolute;
+  top: 12px;
+  left: 292px;
+}
