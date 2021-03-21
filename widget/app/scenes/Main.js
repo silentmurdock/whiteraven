@@ -1367,12 +1367,16 @@ function GetMovieInfo(qtype, type, cpage, typedtext) {
 
     xhr.addEventListener("readystatechange", function () {
       if (this.readyState == 4) {
-        if (this.status == 200) {
+        if (this.status == 200 || this.status == 404) {
             reqSuccess = true;
             alert("[White Raven] Tmdb data received");
             
-            var dataobject = JSON.parse(this.responseText.replace(/\"name\"/g,"\"title\"")).results[0];
-            
+            var dataobject = JSON.parse(this.responseText.replace(/\"name\"/g,"\"title\""));
+
+            if (dataobject && dataobject.success == true) {
+                dataobject = dataobject.results[0];
+            }
+                        
             var maxIndex = 0;
             if (dataobject.results) {
                 maxIndex = dataobject.results.length;
