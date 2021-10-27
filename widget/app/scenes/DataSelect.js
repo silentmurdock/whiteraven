@@ -85,7 +85,7 @@ SceneDataSelect.prototype.handleHide = function () {
             }
         }
         if (count == 0) {
-            saveSettings['moviesource_pt'] = "true";
+            saveSettings['moviesource_yts'] = "true";
         }
         mainsettingslist[2].children[0].innerText = settingsMainMenuText[lang][2] + ' - ' + outputText;
     } else if (this.dataType == "tvsource") {
@@ -103,7 +103,7 @@ SceneDataSelect.prototype.handleHide = function () {
             }
         }
         if (count == 0) {
-            saveSettings['tvsource_pt'] = "true";
+            saveSettings['tvsource_eztv'] = "true";
         }
         mainsettingslist[3].children[0].innerText = settingsMainMenuText[lang][3] + ' - ' + outputText;
     }

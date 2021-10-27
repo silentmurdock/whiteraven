@@ -14,21 +14,21 @@
 
 ## Screenshots
 
-![Screenshot](https://camo.githubusercontent.com/5685604ee5dc9b71d25c417e2b9eb4bdbce62292853616af1e1727ba68672db9/68747470733a2f2f692e6962622e636f2f7234673451346a2f747673686f77732e6a7067)
+![Screenshot](https://user-images.githubusercontent.com/52458669/138864485-19c5730f-13b8-4e87-a080-4bb88483af39.jpg)
 
-![Screenshot](https://camo.githubusercontent.com/ebcae33f28aa5d66416fd6642ed1111baeaafcd07c41ae2d89a75cd752267a69/68747470733a2f2f692e6962622e636f2f316e4e524374422f696e747673686f772e6a7067)
+![Screenshot](https://user-images.githubusercontent.com/52458669/138864525-5f444c9a-8617-4843-8409-581abd95c769.jpg)
 
-![Screenshot](https://camo.githubusercontent.com/b0cc589071750fd810e06467b31b9d3d15d152203993a2cb995469cfee6f3e4e/68747470733a2f2f692e6962622e636f2f6638624d5768362f747673686f777375627469746c652e6a7067)
+![Screenshot](https://user-images.githubusercontent.com/52458669/137933681-daf33545-09f8-4df4-94d4-d5f18f24d25c.jpg)
 
-![Screenshot](https://camo.githubusercontent.com/1515d18a46aeed1af351c1469c7b09da4838cb65d45438b0d2fe15a011277d61/68747470733a2f2f692e6962622e636f2f50574e5a7632432f6d6f766965732e6a7067)
+![Screenshot](https://user-images.githubusercontent.com/52458669/138864464-b66d3397-4102-49ce-8fa0-4a5a21f87934.jpg)
 
-![Screenshot](https://camo.githubusercontent.com/c96f920145ba15b4a248f0cad82c04aa55a4aafba6b5efc67ecd730c45225b47/68747470733a2f2f692e6962622e636f2f5a534c583243682f686f7374736d656e752e6a7067)
+![Screenshot](https://user-images.githubusercontent.com/52458669/138864811-cf848bf3-689d-46ae-996a-b560745a65df.jpg)
 
-![Screenshot](https://camo.githubusercontent.com/8e4e07f5a3563f27b5259214be53fdefef5291460b8426d8404408fb5a6d1558/68747470733a2f2f692e6962622e636f2f32644c786a56662f696e646f776e6c6f6164322e6a7067)
+![Screenshot](https://user-images.githubusercontent.com/52458669/138864821-309b54ce-718d-478b-bf48-f5d867bae3c0.jpg)
 
-![Screenshot](https://camo.githubusercontent.com/9331e8ded6b2914226f9da722cc2b9f7a7b07823468ae3cecd7953b786c61db3/68747470733a2f2f692e6962622e636f2f52516d764b51792f6d6f7669657375627469746c652e6a7067)
+![Screenshot](https://user-images.githubusercontent.com/52458669/137934439-acfba761-b822-4591-b11a-60b3b3fedc10.jpg)
 
-![Screenshot](https://camo.githubusercontent.com/3cc130756ebb28b2f934c412a28b98d5e59cb4f94760a6c4324e895a024231f9/68747470733a2f2f692e6962622e636f2f6e3150363350372f696e73657474696e67732e6a7067)
+![Screenshot](https://user-images.githubusercontent.com/52458669/138864986-6e37eea1-b8df-43ec-9a74-3cac29e52710.jpg)
 
 ## How to install
 
@@ -63,10 +63,10 @@
 #### The television will connect to the server and install White Raven.
 **If for some reason the online server is unavailable you can use the prebuilt releases to install White Raven!**
 ```
-1. Download the "whiteraven-0.4.2.zip" file.
+1. Download the "whiteraven-0.5.1.zip" file.
 2. Download and extract one of the following installer executables according to your operating system: "sync-0.1.0-x32-windows.zip", "sync-0.1.0-x64-windows.zip", "sync-0.1.0-x32-linux.zip", "sync-0.1.0-x64-linux.zip"
-3. Start the installer with the following command: $ sync -widgetfile="whiteraven-0.4.2.zip"   
-   [The "-widgetfile" parameter must be set to the previously downloaded "whiteraven-0.4.2.zip" file's path.]
+3. Start the installer with the following command: sync -widgetfile="whiteraven-0.5.1.zip"   
+   [The "-widgetfile" parameter must be set to the previously downloaded "whiteraven-0.5.1.zip" file's path.]
 4. Repeat the "setup server IP" process and change the IP address in step 8 to the one shows by the installer.
 ```
 ***BE CAREFUL, THE APPLICATION SYNCHRONIZATION REMOVE ALL PREVIOUSLY INSTALLED USER APPS FROM YOUR SAMSUNG SMART TV!***
@@ -99,10 +99,10 @@
 #### The television will connect to the server and install White Raven.
 **If for some reason the online server is unavailable you can use the prebuilt releases to install White Raven!**
 ```
-1. Download the "whiteraven-0.4.2.zip" file.
+1. Download the "whiteraven-0.5.1.zip" file.
 2. Download and extract one of the following installer executables according to your operating system: "sync-0.1.0-x32-windows.zip", "sync-0.1.0-x64-windows.zip", "sync-0.1.0-x32-linux.zip", "sync-0.1.0-x64-linux.zip"
-3. Start the installer with the following command: $ sync -widgetfile="whiteraven-0.4.2.zip"
-   [The "-widgetfile" parameter must be set to the previously downloaded "whiteraven-0.4.2.zip" file's path.]
+3. Start the installer with the following command: sync -widgetfile="whiteraven-0.5.1.zip"
+   [The "-widgetfile" parameter must be set to the previously downloaded "whiteraven-0.5.1.zip" file's path.]
 4. Repeat the "setup server IP" process and change the IP address in step 5 to the one shows by the installer.
 ```
 ***BE CAREFUL, THE APPLICATION SYNCHRONIZATION REMOVE ALL PREVIOUSLY INSTALLED USER APPS FROM YOUR SAMSUNG SMART TV!***
@@ -134,10 +134,10 @@
 #### The television will connect to the server and install White Raven.
 **If for some reason the online server is unavailable you can use the prebuilt releases to install White Raven!**
 ```
-1. Download the "whiteraven-0.4.2.zip" file.
+1. Download the "whiteraven-0.5.1.zip" file.
 2. Download and extract one of the following installer executables according to your operating system: "sync-0.1.0-x32-windows.zip", "sync-0.1.0-x64-windows.zip", "sync-0.1.0-x32-linux.zip", "sync-0.1.0-x64-linux.zip"
-3. Start the installer with the following command: $ sync -widgetfile="whiteraven-0.4.2.zip"
-   [The "-widgetfile" parameter must be set to the previously downloaded "whiteraven-0.4.2.zip" file's path.]
+3. Start the installer with the following command: sync -widgetfile="whiteraven-0.5.1.zip"
+   [The "-widgetfile" parameter must be set to the previously downloaded "whiteraven-0.5.1.zip" file's path.]
 4. Repeat the "setup server IP" process and change the IP address in step 4 to the one shows by the installer.
 ```
 ***BE CAREFUL, THE APPLICATION SYNCHRONIZATION REMOVE ALL PREVIOUSLY INSTALLED USER APPS FROM YOUR SAMSUNG SMART TV!***
@@ -148,10 +148,10 @@
 <summary>Steps for rooted Samsung Smart TV E, F, H series</summary>
 
 ```
-1. Download or build the "whiteraven-0.4.2.zip" file.
+1. Download or build the "whiteraven-0.5.1.zip" file.
 2. Connect to your television over FTP/SFTP.
 3. Create a folder named as "WhiteRaven" (Case sensitive!) inside the "/mtd_rwcommon/widgets/user" directory.
-4. Extract the contents of the "whiteraven-0.4.2.zip" file to this directory.
+4. Extract the contents of the "whiteraven-0.5.1.zip" file to this directory.
 5. Reboot your television.
 6. After reboot White Raven should show up in the apps section.
 ```
@@ -168,7 +168,7 @@
 <details>
 <summary>Use on a rootless television</summary>
 
-#### For a rootless television the underlying server must run on an external device that connected to the same local network. You can download prebuilt servers for Windows or Linux from the [White Raven Server](https://github.com/silentmurdock/wrserver/releases/tag/v0.4.2) release page.
+#### For a rootless television the underlying server must run on an external device that connected to the same local network. You can download prebuilt servers for Windows or Linux from the [White Raven Server](https://github.com/silentmurdock/wrserver/releases/tag/v0.5.1) release page.
 ```
 1. Extract and run the downloaded server.
    [You may need to allow it to access the Internet.]
@@ -181,45 +181,35 @@
 
 ### Build on Windows
 <details>
-<summary>Build "whiteraven-rootless-0.4.2.zip" for rootless television</summary>
+<summary>Build "whiteraven-rootless-0.5.1.zip" for rootless television</summary>
 
-#### Download White Raven's source code:
+#### Build "whiteraven-rootless-0.5.1.zip":
 ```
-$ go get -v -u github.com/silentmurdock/whiteraven
-```
-#### Build "whiteraven-rootless-0.4.2.zip":
-```
-$ go run build.go rootless
+set GO111MODULE=on
+go run build.go rootless
 ```
 </details>
 
 <details>
-<summary>Build "whiteraven-0.4.2.zip" for rooted television</summary>
+<summary>Build "whiteraven-0.5.1.zip" for rooted television</summary>
 
-#### To create the widget, you need to download the prebuilt "wrserver-0.4.2-armv7-linux.tar.gz" ARM server executable from [White Raven Server](https://github.com/silentmurdock/wrserver/releases/tag/v0.4.2) release page or need to build it yourself with the following commands.
+#### To create the widget, you need to download the prebuilt "wrserver-0.5.1-armv7-linux.tar.gz" ARM server executable from [White Raven Server](https://github.com/silentmurdock/wrserver/releases/tag/v0.5.1) release page or need to build it yourself with the following commands.
 
-#### Download White Raven Server's source code:
-```
-$ go get -v -u github.com/silentmurdock/wrserver
-```
 #### Build "wrserver" for ARM:
 ```
-$ set GOOS=linux
-$ set GOARCH=arm
-$ set GOARM=7
-$ go build -ldflags="-s -w" -mod=vendor -o wrserver
-```
-
-#### Download White Raven's source code:
-```
-$ go get -v -u github.com/silentmurdock/whiteraven
+set GO111MODULE=on
+set GOOS=linux
+set GOARCH=arm
+set GOARM=7
+go build -ldflags="-s -w" -o wrserver
 ```
 
 #### Now you can able to make the White Raven widget by specifying the "-serverfile" parameter in the following build command. The "-serverfile" parameter must be set to the previously built or downloaded "wrserver" file's path.
 
-#### Build "whiteraven-0.4.2.zip":
+#### Build "whiteraven-0.5.1.zip":
 ```
-$ go run build.go rooted -serverfile="wrserver"
+set GO111MODULE=on
+go run build.go rooted -serverfile="wrserver"
 ```
 </details>
 

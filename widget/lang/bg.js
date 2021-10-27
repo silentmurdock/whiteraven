@@ -71,7 +71,7 @@ var aboutInfoText = { bg: 'ГЛЕДАЙТЕ ФИЛМИ И ТВ ШОУ ОТ ТО�
                     '<DL><DT>ФИЛМИ И ТВ ШОУ ПРАГРАМИ</DT>' + 
                     '<DD>THE MOVIE DB, TVMAZE</DD>' +
                     '<DT>TORRENT</DT>' +
-                    '<DD>POPCORN TIME, YTS, EZTV, RARBG, 1337X, PTO, ITORRENT</DD>' +
+                    '<DD>YTS, EZTV, RARBG, 1337X, PTO, ITORRENT</DD>' +
                     '<DT>СУБТИТРИ</DT>' +
                     '<DD>OPENSUBTITLES</DD></DL>' };
 var aboutFooterText = { bg: 'ВЕРСИЯ: ' + version + '</BR>GITHUB.COM/SILENTMURDOCK' };
@@ -94,8 +94,8 @@ languageListText['bg'] = ['АВТОМАТИЧНО',
                         'ЛИТОВСКИ', 'НОРВЕЖКИ', 'ПЕРСИЙСКИ', 'ПОЛСКИ', 'ПОРТУГАЛСКИ', 'ПОРТУГАЛСКИ ( БР )', 'РУМЪНСКИ', 'РУСКИ', 'СРЪБСКИ',
                         'СЛОВАШКИ', 'ИСПАНСКИ', 'СУАХИЛИ', 'ШВЕДСКИ', 'ТАЙЛАНДСКИ', 'ТУРСКИ', 'УРДУ', 'ВИЕТНАМСКИ'];                      
 interfaceLangText['bg'] = ['АВТОМАТИЧНИ', 'БЪЛГАРСКИ', 'ХЪРВАТСКИ', 'АНГЛИЙСКИ', 'УНГАРСКИ', 'ИСПАНСКИ', 'СЛОВАШКИ', 'ИТАЛИАНСКИ'];
-movieSourceListText['bg'] = ['POPCORN TIME', 'YTS', 'RARBG', '1337X', 'POPCORN TIME ONLINE', 'ITORRENT'];
-tvSourceListText['bg'] = ['POPCORN TIME', 'EZTV', 'RARBG', '1337X'];
+movieSourceListText['bg'] = ['YTS', 'RARBG', '1337X', 'POPCORN TIME ONLINE', 'ITORRENT'];
+tvSourceListText['bg'] = ['EZTV', 'RARBG', '1337X'];
 subtitleModeListText['bg'] = ['IMDB ID', 'FILE HASH'];
 downSpeedListText['bg'] = ['128 Kbps', '256 Kbps', '512 Kbps', '1024 Kbps', '2048 Kbps', '4096 Kbps', '8192 Kbps', 'НЕОГРАНИЧЕН'];
 upSpeedListText['bg'] = ['128 Kbps', '256 Kbps', '512 Kbps', '1024 Kbps', '2048 Kbps', '4096 Kbps', '8192 Kbps', 'НЕОГРАНИЧЕН'];

@@ -71,7 +71,7 @@ var aboutInfoText = { sk: 'SLEDUJTE FILMY A TELEVÍZNE RELÁCIE Z TORRENTOV OKAM
                     '<DL><DT>FILMY A TELEVÍZNE RELÁCIE</DT>' +
                     '<DD>THE MOVIE DB, TVMAZE</DD>' +
                     '<DT>TORRENT</DT>' +
-                    '<DD>POPCORN TIME, YTS, EZTV, RARBG, 1337X, PTO, ITORRENT</DD>' +
+                    '<DD>YTS, EZTV, RARBG, 1337X, PTO, ITORRENT</DD>' +
                     '<DT>TITULKY</DT>' +
                     '<DD>OPENSUBTITLES</DD></DL>' };
 var aboutFooterText = { sk: 'VERZIA: ' + version + '</BR>GITHUB.COM/SILENTMURDOCK' };
@@ -94,8 +94,8 @@ languageListText['sk'] = ['AUTOMATICKÝ',
                         'LITVANSKY', 'NÓRSKY', 'PERZSKY', 'POĽSKY', 'PORTUGALSKY', 'PORTUGALSKY ( BR )', 'RUMUNSKY', 'RUSKY', 'SRBSKY',
                         'SLOVENSKÝ', 'ŠPANIELSKY', 'SWAHILI', 'ŠVEDSKY', 'THAJSKY', 'TURECKY', 'URDU', 'VIETNAMSKY'];
 interfaceLangText['sk'] = ['AUTOMATICKÝ', 'BULHARSKÝ', 'CHORVÁTSKY', 'ANGLICKÝ', 'MAĎARSKÝ', 'ŠPANIELSKY', 'SLOVENSKÝ', 'TALIANSKY'];
-movieSourceListText['sk'] = ['POPCORN TIME', 'YTS', 'RARBG', '1337X', 'POPCORN TIME ONLINE', 'ITORRENT'];
-tvSourceListText['sk'] = ['POPCORN TIME', 'EZTV', 'RARBG', '1337X'];
+movieSourceListText['sk'] = ['YTS', 'RARBG', '1337X', 'POPCORN TIME ONLINE', 'ITORRENT'];
+tvSourceListText['sk'] = ['EZTV', 'RARBG', '1337X'];
 subtitleModeListText['sk'] = ['IMDB ID', 'SÚBOR HASH'];
 downSpeedListText['sk'] = ['128 Kbps', '256 Kbps', '512 Kbps', '1024 Kbps', '2048 Kbps', '4096 Kbps', '8192 Kbps', 'NEOBMEDZENÝ'];
 upSpeedListText['sk'] = ['128 Kbps', '256 Kbps', '512 Kbps', '1024 Kbps', '2048 Kbps', '4096 Kbps', '8192 Kbps', 'NEOBMEDZENÝ'];

@@ -71,7 +71,7 @@ var aboutInfoText = { hr: 'GLEDAJTE FILMOVE I TV SERIJE POMOĆU TORRENTA!<SPAN><
                     '<DL><DT>FILMOVI I TV SERIJE</DT>' + 
                     '<DD>THE MOVIE DB, TVMAZE</DD>' +
                     '<DT>TORRENT</DT>' +
-                    '<DD>POPCORN TIME, YTS, EZTV, RARBG, 1337X, PTO, ITORRENT</DD>' +
+                    '<DD>YTS, EZTV, RARBG, 1337X, PTO, ITORRENT</DD>' +
                     '<DT>PODNASLOVI</DT>' +
                     '<DD>OPENSUBTITLES</DD></DL>' };
 var aboutFooterText = { hr: 'INAČICA: ' + version + '</BR>GITHUB.COM/SILENTMURDOCK' };
@@ -94,8 +94,8 @@ languageListText['hr'] = ['AUTOMATSKI',
                         'LITVANSKI', 'NORVEŠKI', 'PERZIJSKI', 'POLJSKI', 'PORTUGALSKI', 'PORTUGALSKI ( BR )', 'RUMUNJSKI', 'RUSKI', 'SRPSKI',
                         'SLOVAČKI', 'ŠPANJOLSKI', 'SVAHILI', 'ŠVEDSKI', 'TAJLANDSKI', 'TURSKI', 'URDU', 'VIJETNAMSKI'];                      
 interfaceLangText['hr'] = ['AUTOMATSKI', 'BUGARSKI', 'HRVATSKI', 'ENGLESKI', 'MAĐARSKI', 'ŠPANJOLSKI', 'SLOVAČKI', 'TALIJANSKI'];
-movieSourceListText['hr'] = ['POPCORN TIME', 'YTS', 'RARBG', '1337X', 'POPCORN TIME ONLINE', 'ITORRENT'];
-tvSourceListText['hr'] = ['POPCORN TIME', 'EZTV', 'RARBG', '1337X'];
+movieSourceListText['hr'] = ['YTS', 'RARBG', '1337X', 'POPCORN TIME ONLINE', 'ITORRENT'];
+tvSourceListText['hr'] = ['EZTV', 'RARBG', '1337X'];
 subtitleModeListText['hr'] = ['IMDB ID', 'FILE HASH'];
 downSpeedListText['hr'] = ['128 kb/s', '256 kb/s', '512 kb/s', '1024 kb/s', '2048 kb/s', '4096 kb/s', '8192 kb/s', 'NEOGRANIČENO'];
 upSpeedListText['hr'] = ['128 kb/s', '256 kb/s', '512 kb/s', '1024 kb/s', '2048 kb/s', '4096 kb/s', '8192 kb/s', 'NEOGRANIČENO'];
