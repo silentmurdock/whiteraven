@@ -71,7 +71,7 @@ var aboutInfoText = { hu: 'NÉZZ FILMEKET ÉS SOROZATOKAT TORRENTEKBŐL!<SPAN></
                     '<DL><DT>FILM ÉS SOROZAT</DT>' + 
                     '<DD>THE MOVIE DB, TVMAZE</DD>' +
                     '<DT>TORRENT</DT>' +
-                    '<DD>POPCORN TIME, YTS, EZTV, RARBG, 1337X, PTO, ITORRENT</DD>' +
+                    '<DD>YTS, EZTV, RARBG, 1337X, PTO, ITORRENT</DD>' +
                     '<DT>FELIRAT</DT>' +
                     '<DD>OPENSUBTITLES</DD></DL>' };
 var aboutFooterText = { hu: 'VERZIÓ: ' + version + '</BR>GITHUB.COM/SILENTMURDOCK' };
@@ -94,8 +94,8 @@ languageListText['hu'] = ['AUTOMATIKUS',
                         'LITVÁN', 'NORVÉG', 'PERZSA ', 'LENGYEL', 'PORTUGÁL', 'PORTUGÁL ( BR )', 'ROMÁN', 'OROSZ', 'SZERB',
                         'SZLOVÁK', 'SPANYOL', 'SZUAHÉLI', 'SVÉD', 'THAI', 'TÖRÖK', 'URDU', 'VIETNÁMI'];                        
 interfaceLangText['hu'] = ['AUTOMATIKUS', 'BOLGÁR', 'HORVÁT', 'ANGOL', 'MAGYAR', 'SPANYOL', 'SZLOVÁK', 'OLASZ'];
-movieSourceListText['hu'] = ['POPCORN TIME', 'YTS', 'RARBG', '1337X', 'POPCORN TIME ONLINE', 'ITORRENT'];
-tvSourceListText['hu'] = ['POPCORN TIME', 'EZTV', 'RARBG', '1337X'];
+movieSourceListText['hu'] = ['YTS', 'RARBG', '1337X', 'POPCORN TIME ONLINE', 'ITORRENT'];
+tvSourceListText['hu'] = ['EZTV', 'RARBG', '1337X'];
 subtitleModeListText['hu'] = ['IMDB ID', 'FÁJL HASH'];
 downSpeedListText['hu'] = ['128 Kbps', '256 Kbps', '512 Kbps', '1024 Kbps', '2048 Kbps', '4096 Kbps', '8192 Kbps', 'KORLÁTLAN'];
 upSpeedListText['hu'] = ['128 Kbps', '256 Kbps', '512 Kbps', '1024 Kbps', '2048 Kbps', '4096 Kbps', '8192 Kbps', 'KORLÁTLAN'];

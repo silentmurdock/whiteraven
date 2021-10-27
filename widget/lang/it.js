@@ -71,7 +71,7 @@ var aboutInfoText = { it: 'GUARDA FILM E SERIE TV DA TORRENT IMMEDIATAMENTE!<SPA
                     '<DL><DT>MOVIE AND TV SHOW</DT>' + 
                     '<DD>THE MOVIE DB, TVMAZE</DD>' +
                     '<DT>TORRENT</DT>' +
-                    '<DD>POPCORN TIME, YTS, EZTV, RARBG, 1337X, PTO, ITORRENT</DD>' +
+                    '<DD>YTS, EZTV, RARBG, 1337X, PTO, ITORRENT</DD>' +
                     '<DT>SUBTITLE</DT>' +
                     '<DD>OPENSUBTITLES</DD></DL>' };
 var aboutFooterText = { it: 'VERSIONE: ' + version + '</BR>GITHUB.COM/SILENTMURDOCK' };
@@ -94,8 +94,8 @@ languageListText['it'] = ['AUTOMATICO',
                         'LITUANO', 'NORVEGESE', 'PERSIANO', 'POLACCO', 'PORTOGESE', 'PORTOGESE ( BR )', 'RUMENO', 'RUSSO', 'SERBO',
                         'SLOVACCO', 'SPAGNOLO', 'SWAHILI', 'SVEDESE', 'THAI', 'TURCO', 'URDU', 'VIETNAMITA'];                      
 interfaceLangText['it'] = ['AUTOMATICO', 'BULGARO', 'CROATO', 'INGLESE', 'UNGHERESE', 'SPAGNOLO', 'SLOCCO', 'ITALIANO'];
-movieSourceListText['it'] = ['POPCORN TIME', 'YTS', 'RARBG', '1337X', 'POPCORN TIME ONLINE', 'ITORRENT'];
-tvSourceListText['it'] = ['POPCORN TIME', 'EZTV', 'RARBG', '1337X'];
+movieSourceListText['it'] = ['YTS', 'RARBG', '1337X', 'POPCORN TIME ONLINE', 'ITORRENT'];
+tvSourceListText['it'] = ['EZTV', 'RARBG', '1337X'];
 subtitleModeListText['it'] = ['IMDB ID', 'FILE HASH'];
 downSpeedListText['it'] = ['128 Kbps', '256 Kbps', '512 Kbps', '1024 Kbps', '2048 Kbps', '4096 Kbps', '8192 Kbps', 'UNLIMITED'];
 upSpeedListText['it'] = ['128 Kbps', '256 Kbps', '512 Kbps', '1024 Kbps', '2048 Kbps', '4096 Kbps', '8192 Kbps', 'UNLIMITED'];

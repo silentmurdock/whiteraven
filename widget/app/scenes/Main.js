@@ -5,7 +5,7 @@
 var serverIP = "127.0.0.1";
 
 // Current version
-var version = "0.4.2";
+var version = "0.5.1";
 
 // Detect TV IP address
 var network = document.getElementById('networkplugin');
@@ -155,10 +155,10 @@ var interfaceLangText = {};
 interfaceLangText['shortcode'] = ['auto', 'bg', 'hr', 'en', 'hu', 'es', 'sk', 'it'];
 
 var movieSourceListText = {};
-movieSourceListText['name'] = ['pt', 'yts', 'rarbg', '1337x', 'pto', 'itorrent'];
+movieSourceListText['name'] = ['yts', 'rarbg', '1337x', 'pto', 'itorrent'];
 
 var tvSourceListText = {};
-tvSourceListText['name'] = ['pt', 'eztv', 'rarbg', '1337x'];
+tvSourceListText['name'] = ['eztv', 'rarbg', '1337x'];
 
 var subtitleModeListText = {};
 subtitleModeListText['name'] = ['imdb', 'hash'];
@@ -597,7 +597,8 @@ function IsTheServerStarted() {
         if (this.status == 200) {
             reqStartSuccess = true;
             var dataobject = JSON.parse(this.responseText);
-            if ((dataobject) && (dataobject.message.indexOf("White Raven Server v" + version) != -1)) {
+            var mmVersion = version.substring(0, version.lastIndexOf('.'));
+            if ((dataobject) && (dataobject.message.indexOf("White Raven Server v" + mmVersion) != -1)) {
                 alert("[White Raven] Server started: " + dataobject.message);
                 SERVER_OK = true;
                 widgetAPI.putInnerHTML(document.getElementById("playbutton"), playButtonText[lang]);
@@ -675,7 +676,8 @@ function IsTheServerStillRunning(fn) {
         if (this.status == 200) {
             reqStartSuccess = true;
             var dataobject = JSON.parse(this.responseText);
-            if ((dataobject) && (dataobject.message.indexOf("White Raven Server v" + version) != -1)) {
+            var mmVersion = version.substring(0, version.lastIndexOf('.'));
+            if ((dataobject) && (dataobject.message.indexOf("White Raven Server v" + mmVersion) != -1)) {
                 fn(true);
             } else {
                 fn(false);
@@ -758,13 +760,11 @@ function SaveDefaultTemp() {
         (lang == 'es') || (lang == 'sk') || (lang == 'it')) {
         saveSettings['interface'] = lang;
         saveSettings['database'] = lang;
-        saveSettings['moviesource_pt'] = "true";
         saveSettings['moviesource_yts'] = "true";
         saveSettings['moviesource_rarbg'] = "false";
         saveSettings['moviesource_1337x'] = "true";
         saveSettings['moviesource_pto'] = "false";
         saveSettings['moviesource_itorrent'] = "false";
-        saveSettings['tvsource_pt'] = "true";
         saveSettings['tvsource_eztv'] = "true";
         saveSettings['tvsource_rarbg'] = "false";
         saveSettings['tvsource_1337x'] = "true";
@@ -784,13 +784,11 @@ function SaveDefaultTemp() {
     } else {
         saveSettings['interface'] = "en";
         saveSettings['database'] = "en";
-        saveSettings['moviesource_pt'] = "true";
         saveSettings['moviesource_yts'] = "true";
         saveSettings['moviesource_rarbg'] = "false";
         saveSettings['moviesource_1337x'] = "true";
         saveSettings['moviesource_pto'] = "false";
         saveSettings['moviesource_itorrent'] = "false";
-        saveSettings['tvsource_pt'] = "true";
         saveSettings['tvsource_eztv'] = "true";
         saveSettings['tvsource_rarbg'] = "false";
         saveSettings['tvsource_1337x'] = "true";
@@ -832,13 +830,11 @@ function CreateOrLoadTemp() {
     } else {
         saveSettings['interface'] = sf.core.localData('interface');
         saveSettings['database'] = sf.core.localData('database');
-        saveSettings['moviesource_pt'] = sf.core.localData('moviesource_pt');
         saveSettings['moviesource_yts'] = sf.core.localData('moviesource_yts');
         saveSettings['moviesource_rarbg'] = sf.core.localData('moviesource_rarbg');
         saveSettings['moviesource_1337x'] = sf.core.localData('moviesource_1337x');
         saveSettings['moviesource_pto'] = sf.core.localData('moviesource_pto');
         saveSettings['moviesource_itorrent'] = sf.core.localData('moviesource_itorrent');
-        saveSettings['tvsource_pt'] = sf.core.localData('tvsource_pt');
         saveSettings['tvsource_eztv'] = sf.core.localData('tvsource_eztv');
         saveSettings['tvsource_rarbg'] = sf.core.localData('tvsource_rarbg');
         saveSettings['tvsource_1337x'] = sf.core.localData('tvsource_1337x');
@@ -872,6 +868,22 @@ function CreateOrLoadTemp() {
         if (isundefined) {
             SaveDefaultTemp();
         } else {
+            if (saveSettings['moviesource_yts'] == "false" &&
+                saveSettings['moviesource_rarbg'] == "false" &&
+                saveSettings['moviesource_1337x'] == "false" &&
+                saveSettings['moviesource_pto'] == "false" &&
+                saveSettings['moviesource_itorrent'] == "false") {
+                saveSettings['moviesource_yts'] = "true";
+                sf.core.localData('moviesource_yts', saveSettings['moviesource_yts']);
+            }
+
+            if (saveSettings['tvsource_eztv'] == "false" &&
+                saveSettings['tvsource_rarbg'] == "false" &&
+                saveSettings['tvsource_1337x'] == "false") {
+                saveSettings['tvsource_eztv'] = "true";
+                sf.core.localData('tvsource_eztv', saveSettings['tvsource_eztv']);
+            }
+
             lang = saveSettings['interface'];
             islogenabled = saveSettings['islogenabled'];
         }
@@ -885,13 +897,11 @@ function SaveTemp() {
         fileSystemObj.createCommonDir(curWidget.id);
         sf.core.localData('interface', saveSettings['interface']);
         sf.core.localData('database', saveSettings['database']);
-        sf.core.localData('moviesource_pt', saveSettings['moviesource_pt']);
         sf.core.localData('moviesource_yts', saveSettings['moviesource_yts']);
         sf.core.localData('moviesource_rarbg', saveSettings['moviesource_rarbg']);
         sf.core.localData('moviesource_1337x', saveSettings['moviesource_1337x']);
         sf.core.localData('moviesource_pto', saveSettings['moviesource_pto']);
         sf.core.localData('moviesource_itorrent', saveSettings['moviesource_itorrent']);        
-        sf.core.localData('tvsource_pt', saveSettings['tvsource_pt']);
         sf.core.localData('tvsource_eztv', saveSettings['tvsource_eztv']);
         sf.core.localData('tvsource_rarbg', saveSettings['tvsource_rarbg']);
         sf.core.localData('tvsource_1337x', saveSettings['tvsource_1337x']);
@@ -911,13 +921,11 @@ function SaveTemp() {
     } else {
         sf.core.localData('interface', saveSettings['interface']);
         sf.core.localData('database', saveSettings['database']);
-        sf.core.localData('moviesource_pt', saveSettings['moviesource_pt']);
         sf.core.localData('moviesource_yts', saveSettings['moviesource_yts']);
         sf.core.localData('moviesource_rarbg', saveSettings['moviesource_rarbg']);
         sf.core.localData('moviesource_1337x', saveSettings['moviesource_1337x']);
         sf.core.localData('moviesource_pto', saveSettings['moviesource_pto']);
         sf.core.localData('moviesource_itorrent', saveSettings['moviesource_itorrent']);        
-        sf.core.localData('tvsource_pt', saveSettings['tvsource_pt']);
         sf.core.localData('tvsource_eztv', saveSettings['tvsource_eztv']);
         sf.core.localData('tvsource_rarbg', saveSettings['tvsource_rarbg']);
         sf.core.localData('tvsource_1337x', saveSettings['tvsource_1337x']);
@@ -950,13 +958,11 @@ function RestoreDefaultTemp() {
             (lang == 'es') || (lang == 'sk') || (lang == 'it')) {
             saveSettings['interface'] = lang;
             saveSettings['database'] = lang;
-            saveSettings['moviesource_pt'] = "true";
             saveSettings['moviesource_yts'] = "true";
             saveSettings['moviesource_rarbg'] = "false";
             saveSettings['moviesource_1337x'] = "true";
             saveSettings['moviesource_pto'] = "false";
             saveSettings['moviesource_itorrent'] = "false";
-            saveSettings['tvsource_pt'] = "true";
             saveSettings['tvsource_eztv'] = "true";
             saveSettings['tvsource_rarbg'] = "false";
             saveSettings['tvsource_1337x'] = "true";
@@ -976,13 +982,11 @@ function RestoreDefaultTemp() {
         } else {
             saveSettings['interface'] = "en";
             saveSettings['database'] = "en";
-            saveSettings['moviesource_pt'] = "true";
             saveSettings['moviesource_yts'] = "true";
             saveSettings['moviesource_rarbg'] = "false";
             saveSettings['moviesource_1337x'] = "true";
             saveSettings['moviesource_pto'] = "false";
             saveSettings['moviesource_itorrent'] = "false";
-            saveSettings['tvsource_pt'] = "true";
             saveSettings['tvsource_eztv'] = "true";
             saveSettings['tvsource_rarbg'] = "false";
             saveSettings['tvsource_1337x'] = "true";
